@@ -1,0 +1,123 @@
+body{
+    margin: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5%;
+    background-color: rgb(191, 191, 207);
+    color: black;
+}
+
+.logo{
+    font-size: 25px;
+}
+
+.menu {
+    display: flex;
+    gap: 15px;
+    padding-right: 5px;
+}
+
+.menu a{
+    text-decoration: none;
+    color: black;
+}
+
+.menu a:hover{
+    text-decoration: none;
+    color: blue;
+}
+
+.ativo {
+    font-weight: bold;
+    border-bottom: 2px solid darkgoldenrod;
+    color: darkgoldenrod;
+}
+
+@media (max-width: 700px){
+    .nav {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .menu{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .menu a{
+        padding: 5px;
+    }
+}
+
+.hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    flex-direction: column;
+    background-color: brown;
+}
+
+.hero h1,p {
+    color: white;
+}
+
+.hitoria{
+    padding: 20px;
+    background-color: white;
+}
+
+.hitoria p {
+    color: white;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+.card{
+    background-color: darkgray;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.historia p2{
+    color: gray;
+    font-size: 20px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.conteudo {
+    max-width: 900px;
+    margin: auto;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: darkgray;
+    color: black;
+    padding: 20px;
+    margin-top: 15px;
+}
+
+.footer p {
+    color: black;
+}
+
+@media (max-width: 700px){
+    .footer {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+}
